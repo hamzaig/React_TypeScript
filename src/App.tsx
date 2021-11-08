@@ -4,7 +4,7 @@ import Todos from "./components/Todos";
 function App() {
   return (
     <h1>
-      <Todos />
+      <Todos items={["Heelo", "world"]} />
     </h1>
   );
 }
