@@ -7,7 +7,8 @@ const NewTodo: React.FC<{ onAddTodo: (text: string) => void }> = (props) => {
     event.preventDefault();
 
     const enteredText = textRef.current!.value;
-    if (enteredText.trim.length === 0) {
+
+    if (enteredText.trim().length === 0) {
       return;
     }
     props.onAddTodo(enteredText);
